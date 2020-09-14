@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style&script/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>sign up</title>
+    <style>
+        header{
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../docs/school.png);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+        #form{
+             background-color: rgba(0, 217, 255, 0.466);
+             width: 600px;
+             position: relative;
+             left: 400px;
+             /* height: 500px; */
+        }
+        #frm{
+            padding: 45px;
+        }
+        label{
+            color: white;
+            padding: 20px;
+            font-family: sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        #username{
+            position: relative;
+            left: 80px;
+            height: 30px;
+            border-radius: 8px;
+            width: 250px;
+            font-weight: 800;
+        }
+        #password{
+            position: relative;
+            left: 80px;
+            height: 30px;
+            border-radius: 8px;
+            width: 250px;
+            font-weight: 800;
+
+        }
+        #fname{
+            position: relative;
+            left: 80px;
+            height: 30px;
+            border-radius: 8px;
+            width: 250px;
+            font-weight: 800;
+        }
+
+        }
+        #login{
+            position: relative;
+            left: 350px;
+            top: 15px;
+            padding:5px 20px;
+            
+        }
+        #sign{
+            position: relative;
+            left: 10px;
+            top: 15px;
+        }
+        .gender{
+            color: white;
+            font-weight: 600;
+
+        }
+        b{
+            position: relative;
+            left: 100px;
+            
+        }
+        #anc{
+            color: blue;
+            position: relative;
+            left: 110px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <img id="btc" src="docs/batch.png" alt="">
+        <a class="navbar-brand" href="#">Gorabazar.I.C.I</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">speciality</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Video class</a>
+                  <a class="dropdown-item" href="#">online classroom</a>
+                  <a class="dropdown-item" href="#">video tutorial</a>
+                  <a class="dropdown-item" href="#">Live classes</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faculty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Admission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="#">about us</a>
+              </li>  
+          </ul>
+        </div>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>  
+    </nav
+
+<!-- ****************************************************** -->
+
+
+
+    <header>
+
+        <br>
+        <br>
+        <div id="form">
+            
+            <form action="../login.html" id="frm">
+                <label >Full Name</label>
+                <input type="text" placeholder="Full Name" id="fname">
+                <br><br>
+                <label >choose gender</label>
+                <input type="radio" name="gender" class="gender" >Male
+                <input type="radio" name="gender" class="gender">Female
+                <br><br>
+                <label >username</label>
+                <input type="text" id="username" placeholder="username"><br>
+                <br>
+                <label >password</label>
+                <input type="password" id="password" placeholder="password">
+                <br>
+                <br>
+                
+                <button id="login" type="submit" class="btn btn-warning">sign up</button>
+                <b>Already have an account?</b><a href="../login.html" id="anc">Login</a>
+                
+                
+            </form>
+        </div>
+    </header>
+    <script src="style&script/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#username , #password , #fname").focus(function(){
+                $(this).css("border" , "3px solid lightgreen")
+            });
+            $("#username , #password , #fname").blur(function(){
+                $(this).css("border" , "")
+            });
+        });
+    </script>
+      
+          
+      
+      
+</body>
+</html>
